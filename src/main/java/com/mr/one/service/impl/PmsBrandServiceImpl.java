@@ -6,6 +6,8 @@ import com.mr.one.service.IPmsBrandService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  * 品牌表 服务实现类
@@ -16,5 +18,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PmsBrandServiceImpl extends ServiceImpl<PmsBrandMapper, PmsBrand> implements IPmsBrandService {
+
 
 }

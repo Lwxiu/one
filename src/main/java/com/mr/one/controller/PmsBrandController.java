@@ -1,9 +1,14 @@
 package com.mr.one.controller;
 
 
+import com.mr.one.entity.PmsBrand;
+import com.mr.one.service.IPmsBrandService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,5 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/one/pms-brand")
 public class PmsBrandController {
+    @Autowired
+    private IPmsBrandService pmsBrandService;
+
+    @RequestMapping("list")
+    public List<PmsBrand> getBingList(){
+        List<PmsBrand> list = pmsBrandService.list();
+        System.out.println(list);
+        return list;
+    }
 
 }
