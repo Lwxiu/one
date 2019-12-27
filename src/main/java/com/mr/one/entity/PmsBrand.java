@@ -1,6 +1,8 @@
 package com.mr.one.entity;
 
 import java.io.Serializable;
+
+import com.mr.one.common.CommonPage;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -16,9 +18,10 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class PmsBrand implements Serializable {
+public class PmsBrand implements Serializable{
 
     private static final long serialVersionUID = 1L;
+    private Integer id;
 
     private String name;
 
@@ -60,6 +63,8 @@ public class PmsBrand implements Serializable {
      * 品牌故事
      */
     private String brandStory;
+
+    //private String productsn;
 
 
 }
