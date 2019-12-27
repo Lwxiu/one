@@ -3,6 +3,9 @@ package com.mr.one.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 相册图片示例
+ */
 public class PmsAlbumPicExample {
     protected String orderByClause;
 
