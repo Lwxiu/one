@@ -26,6 +26,7 @@ public class PmsAlbumController {
     @ResponseBody
     public void demo(){
         System.out.println(321);
+         System.out.println(3);
         System.out.println(123);
        Object a =  service.demo();
         System.out.println(a);
